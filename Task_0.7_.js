@@ -1,6 +1,6 @@
 function celciusToFahrenheit(celciusTemp) {
     var fahrenheit = celciusTemp * 9/5 + 32;
-    var fahrenheitTemp = celciusTemp + " is " + fahrenheit + " Degrees fahrenheit." //extra variable for better understanding
+    var fahrenheitTemp = celciusTemp + " is " + fahrenheit + " Degrees fahrenheit."
     return fahrenheitTemp
 }
 console.log(celciusToFahrenheit(28))

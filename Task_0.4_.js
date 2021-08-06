@@ -1,8 +1,8 @@
 function evenOrOdd(num) {
     if(num % 2 === 0) {
-        return "Even"
+        console.log("Even")
     } else {
-        return "Odd"
+        console.log("Odd")
     }
 }
-console.log(evenOrOdd(9))
+evenOrOdd(9)

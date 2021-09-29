@@ -9,7 +9,7 @@ function getAllVowels(str) {
 	}
 	var lowercaseVowels = allVowels.map(allVowels => allVowels.toLowerCase());
 	var removeDuplicates = [...new Set(lowercaseVowels)]; //convert to set, then array
-	return "Vowels: " + removeDuplicates.join(", ");
+	console.log("Vowels: " + removeDuplicates.join(", "));
 }
-console.log(getAllVowels("Umuzi"))
+getAllVowels("Umuzi")
    

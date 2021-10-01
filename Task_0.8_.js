@@ -1,22 +1,17 @@
 function convertToHoursMinutes(number) {
-	var hours = Math.floor(number / 60);
-	var minutes = number % 60;
-	if (hours === 1 && minutes === 1) {
-		return hours + " hour, " + minutes + " minute."
-	} else if (hours > 1 && minutes === 1) {
-		return hours + " hours, " + minutes + " minute."
-	} else if (hours < 1 && minutes > 1) {
-		return minutes + " minutes."
-	} else if (hours === 1 && minutes > 1) {
-		return hours + " hour, " + minutes + " minutes."
-	} else if (hours === 1 && minutes === 0) {
-		return hours + " hour, " + minutes + " minutes."
-	} else {
-		return hours + " hours, " + minutes + " minutes."
+	const hours = Math.floor(number / 60);
+	const minutes = number % 60;
+	let hour = "hour"
+	let minute = "minute"
+	if (hours === 0 || hours > 1) {
+		hour += "s"
 	}
+	if(minutes === 0 || minutes > 1) {
+		minute += "s"
+	}
+	return `${hours} ${hour}, ${minutes} ${minute}`
 }
-console.log(convertToHoursMinutes(61))
+console.log(convertToHoursMinutes(1))
 console.log(convertToHoursMinutes(71))
 console.log(convertToHoursMinutes(133))
 console.log(convertToHoursMinutes(560))
-

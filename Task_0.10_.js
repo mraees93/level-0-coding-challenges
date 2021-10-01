@@ -1,7 +1,7 @@
 function getCommonLetters(str1, str2) {
-	var commonChars = [];
-	for (var i = 0; i < str2.length; i++) {
-		var letter = str2[i]
+	let commonChars = [];
+	for (let i = 0; i < str2.length; i++) {
+		let letter = str2[i]
 		if (commonChars.includes(letter)) {
 			continue
 		} else if (str1.includes(letter)) {
